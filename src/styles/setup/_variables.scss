@@ -1,0 +1,27 @@
+$color-white: #fff;
+$text-color-error: #ff0000;
+$text-color-info: #0080ff;
+$color-primary: #16191d;
+$button-color: #1d2126;
+$color-accent: #373e48;
+
+$space-multiplier: 4; // multiplier value for utility class i.e mt-2 = margin-top: 2 * 4
+$xy-border: (
+  top: t,
+  bottom: b,
+  left: l,
+  right: r
+);
+
+$breakpoints: (
+  xs: 500px,
+  sm: 500px,
+  md: 992px,
+  lg: 1024px
+);
+
+$breakpointsAndDown: (
+  smAndDown: 600px,
+  mdAndDown: 992px,
+  lgAndDown: 1024px
+);

@@ -1,0 +1,39 @@
+@for $size from 12 to 34 {
+  .text-#{$size} {
+    font-size: #{$size}px;
+  }
+  @each $break, $breakpoint in $breakpoints {
+    .text-#{$break}-#{$size} {
+      @include breakpoint($break) {
+        font-size: #{$size}px;
+      }
+    }
+  }
+}
+
+.text-bold {
+  font-weight: bold;
+}
+
+.text-72 {
+  font-size: 72px;
+}
+.text-white {
+  color: $color-white;
+}
+
+.text-center {
+  text-align: center;
+}
+.text-left {
+  text-align: left;
+}
+.text-primary {
+  color: $color-primary;
+}
+.text-error {
+  color: $text-color-error;
+}
+.text-info {
+  color: $text-color-info;
+}
